@@ -15,7 +15,7 @@ C:/Users/jonas/Documents/2023-03-05_Coding/Risiko/Risiko/Risiko
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64758
+65258
 Successfully changed project path to: C:/Users/jonas/Documents/2023-03-05_Coding/Risiko/Risiko/Risiko
 C:/Users/jonas/Documents/2023-03-05_Coding/Risiko/Risiko/Risiko
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/jonas/Documents/2023-03-05_Coding/Risiko/Risiko/Risiko
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11024] Host "[IP] 172.17.216.198 [Port] 0 [Flags] 2 [Guid] 1381441507 [EditorId] 1381441507 [Version] 1048832 [Id] WindowsEditor(7,ionas999PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6928] Host "[IP] 172.17.216.198 [Port] 0 [Flags] 2 [Guid] 3669740297 [EditorId] 3669740297 [Version] 1048832 [Id] WindowsEditor(7,ionas999PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11024] Host "[IP] 172.17.216.198 [Port] 0 [Flags] 2 [Guid] 1381441507 [EditorId] 1381441507 [Version] 1048832 [Id] WindowsEditor(7,ionas999PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6928] Host "[IP] 172.17.216.198 [Port] 0 [Flags] 2 [Guid] 3669740297 [EditorId] 3669740297 [Version] 1048832 [Id] WindowsEditor(7,ionas999PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 264.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 111.29 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.20f1 (577897200b8b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005274 seconds.
+Registered in 0.007773 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 116.07 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 108.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.829 seconds
+- Completed reload, in  0.831 seconds
 Domain Reload Profiling:
-	ReloadAssembly (829ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (832ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (611ms)
-			LoadAssemblies (106ms)
+		EndReloadAssembly (579ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
+			SetupTypeCache (149ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (377ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (331ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (116ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (192ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
+				RefreshPlugins (109ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006250 seconds.
+Registered in 0.009167 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jonas\Documents\2023-03-05_Coding\Risiko\Risiko\Risiko\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jonas\Documents\2023-03-05_Coding\Risiko\Risiko\Risiko\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 87.27 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 82.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.243 seconds
+- Completed reload, in  1.174 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1243ms)
-		BeginReloadAssembly (123ms)
+	ReloadAssembly (1175ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1006ms)
-			LoadAssemblies (83ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (946ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (281ms)
+			SetupTypeCache (247ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (489ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (480ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (257ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3781 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (229.0 KB). Loaded Objects now: 4235.
-Memory consumption went from 146.1 MB to 145.9 MB.
-Total: 4.069000 ms (FindLiveObjects: 0.386200 ms CreateObjectMapping: 0.099000 ms MarkObjects: 3.301500 ms  DeleteObjects: 0.280400 ms)
+Unloading 3788 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (229.3 KB). Loaded Objects now: 4242.
+Memory consumption went from 146.2 MB to 146.0 MB.
+Total: 4.011600 ms (FindLiveObjects: 0.329200 ms CreateObjectMapping: 0.112700 ms MarkObjects: 3.222900 ms  DeleteObjects: 0.344800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,125 +167,173 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 73793.840217 seconds.
-  path: Assets/Models/Asia/Afghanistan.png
-  artifactKey: Guid(705b140b5b3cb5a47898451c04d0ebaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Asia/Afghanistan.png using Guid(705b140b5b3cb5a47898451c04d0ebaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d195964657520ac8af9ca56535cdc98') in 0.175638 seconds 
+  Time since last request: 75749.997368 seconds.
+  path: Assets/Models/Africa/SouthAfrica.png
+  artifactKey: Guid(91fba938bb23a314fb160ca39a7a0461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Africa/SouthAfrica.png using Guid(91fba938bb23a314fb160ca39a7a0461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dcd4e8df2101c95284c785c0eb8f3a3') in 0.226365 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Models/NorthAmerika/Alberta.png
-  artifactKey: Guid(0ec149b62cf160147a9b12f52fe919b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/NorthAmerika/Alberta.png using Guid(0ec149b62cf160147a9b12f52fe919b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8827f79ae740503f24dd8bc41c46bd70') in 0.076384 seconds 
+  Time since last request: 5.170232 seconds.
+  path: Assets/Models/Africa/Egypt.png
+  artifactKey: Guid(67b675e4019fdde49882488415db4ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Africa/Egypt.png using Guid(67b675e4019fdde49882488415db4ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836d958a6dad86b804c9aeb75c89f6d7') in 0.066533 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.736279 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Generate_Weights@3x.png
-  artifactKey: Guid(d0e92ddf428f3da4abe78b8ef60e2a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Generate_Weights@3x.png using Guid(d0e92ddf428f3da4abe78b8ef60e2a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cda2be54f04d29d1f8a6f628cfac79e') in 0.026139 seconds 
+  Time since last request: 0.002709 seconds.
+  path: Assets/Models/Africa/NothAfrica.png
+  artifactKey: Guid(d6c6336011204da4a9800b5c5e967dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Africa/NothAfrica.png using Guid(d6c6336011204da4a9800b5c5e967dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4f72a5319d467cadf907565a7250c9') in 0.047376 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008692 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jonas\Documents\2023-03-05_Coding\Risiko\Risiko\Risiko\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jonas\Documents\2023-03-05_Coding\Risiko\Risiko\Risiko\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.372 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1373ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1103ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (500ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (337ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3770 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (195.9 KB). Loaded Objects now: 4252.
+Memory consumption went from 148.7 MB to 148.5 MB.
+Total: 2.987200 ms (FindLiveObjects: 0.340100 ms CreateObjectMapping: 0.146400 ms MarkObjects: 2.338000 ms  DeleteObjects: 0.160800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Weight_Brush@2x.png
-  artifactKey: Guid(fda4344db9f9d794698ed7487ca53957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Weight_Brush@2x.png using Guid(fda4344db9f9d794698ed7487ca53957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805e05278e052267bb59ba22ef2627f5') in 0.053538 seconds 
+  Time since last request: 62.744151 seconds.
+  path: Assets/Models/Asia/India.png
+  artifactKey: Guid(ff6214304812f3047a1e9c8700be7d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asia/India.png using Guid(ff6214304812f3047a1e9c8700be7d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d776e2158c00c315a9a80e2f2a91f7') in 0.213668 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Weight_Brush.png
-  artifactKey: Guid(e41886f7c5271c74f9adbf719cbd3e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Weight_Brush.png using Guid(e41886f7c5271c74f9adbf719cbd3e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37023b13e6f1f14c138447968f2bcfbc') in 0.055402 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 279.844059 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat
-  artifactKey: Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat using Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17085279f56a7a4643fd252c0e62e516') in 0.254200 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
-  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c5611e49d29ebc459f3bdd72d6156d') in 0.069860 seconds 
+  Time since last request: 0.000043 seconds.
+  path: Assets/Models/Asia/Kamschka.png
+  artifactKey: Guid(8786fe1dec65e9f418d2224ba2fdef54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asia/Kamschka.png using Guid(8786fe1dec65e9f418d2224ba2fdef54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c0e08f1853185daf40b1146efcdb1d') in 0.055204 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000058 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
-  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1dfbe84ec9a379307fa5da6988eae71') in 0.154143 seconds 
+  path: Assets/Models/Asia/Siam.png
+  artifactKey: Guid(8bd8f7d0a519fe140aaabb1e0ccff3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asia/Siam.png using Guid(8bd8f7d0a519fe140aaabb1e0ccff3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51335416556abd806a185ec20f020b45') in 0.056611 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat
-  artifactKey: Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat using Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652b4efdba13b5296679ea9852ecfa43') in 0.322892 seconds 
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/Asia/Japan.png
+  artifactKey: Guid(6d4ab33317bc3eb4497606aa8f828ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asia/Japan.png using Guid(6d4ab33317bc3eb4497606aa8f828ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81304da168bc78023d29843e881a35e') in 0.046579 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.501748 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
-  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237664a1feb54e1cfbafc6f1564210dd') in 0.034221 seconds 
+  Time since last request: 9.463140 seconds.
+  path: Assets/Models/Asia/China.png
+  artifactKey: Guid(1066b41688509394a8708d8d3a61d638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asia/China.png using Guid(1066b41688509394a8708d8d3a61d638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0067fa04c3260d948d5af0bdc060699d') in 0.064058 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.015352 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
-  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39f9c91bf5165c219272e3d19e471cd') in 0.090446 seconds 
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Asia/Mongolia.png
+  artifactKey: Guid(a7d2b5a3000afe742adabd57e07e155b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asia/Mongolia.png using Guid(a7d2b5a3000afe742adabd57e07e155b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9273f6814b0995b66552aeb2aeae61') in 0.049586 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
-  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd284e5b1a8e15a9d5f3996cc27e8f9') in 0.060976 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.629119 seconds.
-  path: Assets/Models/NorthAmerika/EasternUnitedStates.png
-  artifactKey: Guid(28da567b861298244b3150c7b3f6a7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/NorthAmerika/EasternUnitedStates.png using Guid(28da567b861298244b3150c7b3f6a7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec40f324f151e448eb6ae17bca0be10c') in 0.059775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Models/NorthAmerika/quebec.png
-  artifactKey: Guid(d1bd77f3e0416eb489f7813a5b548033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/NorthAmerika/quebec.png using Guid(d1bd77f3e0416eb489f7813a5b548033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdbea88a6c2a7447fa632799bf45f686') in 0.049142 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Models/NorthAmerika/Ontario.png
-  artifactKey: Guid(38a3f8c4ad8353a44b15652e28882d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/NorthAmerika/Ontario.png using Guid(38a3f8c4ad8353a44b15652e28882d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49ae9149d9d7c3f3ed2cd9e382e0796') in 0.053418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.597054 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconcheckedoutlocaloverlay@2x.png
-  artifactKey: Guid(3999034958d54364da380a8839a11050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconcheckedoutlocaloverlay@2x.png using Guid(3999034958d54364da380a8839a11050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bfc987bafdf7b794707bae061e8c85a') in 0.030497 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001884 seconds.
+  Time since last request: 0.000067 seconds.
   path: Assets/Models/Asia/Ural.png
   artifactKey: Guid(6aa7a090c5bfbf2429d50ddbf409bf78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Asia/Ural.png using Guid(6aa7a090c5bfbf2429d50ddbf409bf78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b456676eeda1e85edcb89c11c5cc5c0a') in 0.053490 seconds 
+Start importing Assets/Models/Asia/Ural.png using Guid(6aa7a090c5bfbf2429d50ddbf409bf78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0794454dc8b0fa36d8a695bd523178d') in 0.058513 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.845838 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconaddedlocal.png
-  artifactKey: Guid(9a1ab8af8c446204e989a90f18305caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconaddedlocal.png using Guid(9a1ab8af8c446204e989a90f18305caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487be87ba98df2439a19563f29f21be3') in 0.065962 seconds 
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/Asia/MiddleEast.png
+  artifactKey: Guid(da247ade7f1e4f44fa07d3f2ea30c51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asia/MiddleEast.png using Guid(da247ade7f1e4f44fa07d3f2ea30c51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8505e7e34b67ff6d1fd3c685cddd0f73') in 0.064715 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005000 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedlocaloverlay@2x.png
-  artifactKey: Guid(92b204cca46037444ab18ba6701f86f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedlocaloverlay@2x.png using Guid(92b204cca46037444ab18ba6701f86f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67ddce384a2d01753288abfb58006c3') in 0.072065 seconds 
+  Time since last request: 1.847965 seconds.
+  path: Assets/Models/Australia/NewGuinea.png
+  artifactKey: Guid(f2bb74f01a6e3eb49bf9835e9274f397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Australia/NewGuinea.png using Guid(f2bb74f01a6e3eb49bf9835e9274f397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35eee7dd5293a614746c81a6c8f93817') in 0.069408 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002787 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconcheckedoutlocaloverlay@2x.png
-  artifactKey: Guid(8d98ab6168c3e91439339f1908b8fe97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconcheckedoutlocaloverlay@2x.png using Guid(8d98ab6168c3e91439339f1908b8fe97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4dd84933ac2d7d29348a098d5ad9a9') in 0.059908 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 13.998178 seconds.
+  path: Assets/Models/Australia/Indonesia.png
+  artifactKey: Guid(bbd1797f652e194469bd6999057409c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Australia/Indonesia.png using Guid(bbd1797f652e194469bd6999057409c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121ac831c480cab3249fa45334182760') in 0.077105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.265402 seconds.
+  path: Assets/Models/Europe/Iceland.png
+  artifactKey: Guid(050890cb5f364784b91e314a2baa3a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Europe/Iceland.png using Guid(050890cb5f364784b91e314a2baa3a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735ee181ba3aee670852ca83b6ccbc1d') in 0.076887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Models/Europe/SouthernEurope.png
+  artifactKey: Guid(a62e5a6f4d4c22440a0f1df20b4eed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Europe/SouthernEurope.png using Guid(a62e5a6f4d4c22440a0f1df20b4eed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9442f1ac8de518035815da320c367884') in 0.051631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.940997 seconds.
+  path: Assets/Models/Europe/NothernEurope.png
+  artifactKey: Guid(6ba72c75cfc731e4ca76420809275c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Europe/NothernEurope.png using Guid(6ba72c75cfc731e4ca76420809275c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6181daf4fbee179e10feabb456581d') in 0.060027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Europe/Ukraine.png
+  artifactKey: Guid(bff1a36695372e141902fa49f40a3e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Europe/Ukraine.png using Guid(bff1a36695372e141902fa49f40a3e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3903d686c357dea8ae393bea0734c872') in 0.040943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.522151 seconds.
+  path: Assets/Models/SouthAmerika/Brazil.png
+  artifactKey: Guid(98858e8b32cee8c4dbcf59cfc4ae181e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/SouthAmerika/Brazil.png using Guid(98858e8b32cee8c4dbcf59cfc4ae181e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbfb1804bf0198b75a01ec80f079c155') in 0.117817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.782806 seconds.
+  path: Assets/Models/SouthAmerika/Argentinia.png
+  artifactKey: Guid(8c7a2d52c40dc0e43ac85b14ba0a9f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/SouthAmerika/Argentinia.png using Guid(8c7a2d52c40dc0e43ac85b14ba0a9f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa35e8b2eee8867aba1554c5569531c') in 0.093585 seconds 
