@@ -75,6 +75,7 @@ namespace BackEndRefactored
                 Debug.Log($"Attacking {i + 1} time");
                 Debug.Log(attackerCubes[i] + " at");
                 Debug.Log(defenceCubes[i] + " de");
+                
                 if (attackerCubes[i] > defenceCubes[i])
                     amoutOfDefenceTroops --;
                 else
@@ -90,7 +91,7 @@ namespace BackEndRefactored
 
             if (amoutOfDefenceTroops == 0)
             {
-                amoutOfDefenceTroops = amountOfAttackingTroops - 1;
+                amoutOfDefenceTroops = amountOfAttackingTroops;
                 amountOfAttackingTroops = 0;
                 countryToAttack.ChangePlayer(GetPlayer());
             }

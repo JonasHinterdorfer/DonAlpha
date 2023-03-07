@@ -24,7 +24,7 @@ public class Attack : MonoBehaviour
             Country attackingCountry = GameObjects[0].GetComponent<CountryObject>().country;
             
            // if(attackingCountry.GetPlayer() == Gameloop.playerOnMove && Gameloop.gameState == Utils.GameStates.Attack)
-             //   attackingCountry.Attack(GameObjects[1].GetComponent<CountryObject>().country);
+            attackingCountry.Attack(GameObjects[1].GetComponent<CountryObject>().country);
             GameObjects = new List<GameObject>();
         }
     }
