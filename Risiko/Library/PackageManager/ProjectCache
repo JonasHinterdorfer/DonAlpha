@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638136425630975102
-    m_Hash: 4153295679
+      ticks: 638137807085232608
+    m_Hash: 1289984795
   m_LockFileStatus:
     m_FilePath: C:/Users/jonas/Documents/2023-03-05_Coding/Risiko/Risiko/Risiko/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638136426292968788
-    m_Hash: 3077325015
+      ticks: 638137807085232608
+    m_Hash: 1132784649
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3031,6 +3031,7 @@ m_ResolvedPackages:
     - 9.0.1
     - 10.0.0-pre.1
     - 10.0.0-pre.2
+    - 10.0.0
     compatible:
     - 7.0.9
     verified: 7.0.9
@@ -3257,6 +3258,7 @@ m_ResolvedPackages:
     - 8.0.2
     - 9.0.0-pre.1
     - 9.0.0-pre.2
+    - 9.0.0
     compatible:
     - 6.0.7
     verified: 6.0.7
@@ -3466,6 +3468,7 @@ m_ResolvedPackages:
     - 9.0.1
     - 10.0.0-pre.1
     - 10.0.0-pre.2
+    - 10.0.0
     compatible:
     - 7.0.6
     verified: 7.0.6
@@ -3640,6 +3643,7 @@ m_ResolvedPackages:
     - 3.0.3
     - 4.0.0-pre.1
     - 4.0.0-pre.2
+    - 4.0.0-pre.3
     compatible:
     - 2.2.4
     verified: 2.2.4
@@ -3824,6 +3828,7 @@ m_ResolvedPackages:
     - 8.0.1
     - 9.0.0-pre.1
     - 9.0.0-pre.2
+    - 9.0.0
     compatible:
     - 6.0.6
     verified: 6.0.6

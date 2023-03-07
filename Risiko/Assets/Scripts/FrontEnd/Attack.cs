@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using BackEndRefactored;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
@@ -25,6 +27,9 @@ public class Attack : MonoBehaviour
             
            // if(attackingCountry.GetPlayer() == Gameloop.playerOnMove && Gameloop.gameState == Utils.GameStates.Attack)
             attackingCountry.Attack(GameObjects[1].GetComponent<CountryObject>().country);
+            
+            ChangeTextColor(GameObjects[0], Color.black);
+            ChangeTextColor(GameObjects[1], Color.black);
             GameObjects = new List<GameObject>();
         }
     }
@@ -32,5 +37,13 @@ public class Attack : MonoBehaviour
     public void ButtonHasBeenClicked(GameObject gameOb)
     {
         GameObjects.Add(gameOb);
+        ChangeTextColor(gameOb, Color.white);
     }
+
+    private void ChangeTextColor(GameObject gm, Color color)
+    {
+        TextMeshProUGUI textMeshProUGUI = gm.transform.GetChild(0).GameObject().GetComponent<TextMeshProUGUI>();
+        textMeshProUGUI.color = color;
+    }
+    
 }
