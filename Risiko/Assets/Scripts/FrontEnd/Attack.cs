@@ -9,11 +9,15 @@ public class Attack : MonoBehaviour
 {
     public List<GameObject> GameObjects = new List<GameObject>();
     [SerializeField] private bool _canAttack = false;
+    private GameObject GameStateButton;
+    private TextMeshProUGUI textMeshProUGUI;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
+        GameStateButton = GameObject.Find("GameStateButton");
+        textMeshProUGUI = GameStateButton.transform.GetChild(0).GameObject().GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -24,9 +28,17 @@ public class Attack : MonoBehaviour
             Debug.ClearDeveloperConsole();
             //Debug.Log($"{GameObjects[0].name} attacks {GameObjects[1].name}");
             Country attackingCountry = GameObjects[0].GetComponent<CountryObject>().country;
+            Country defendingCountry = GameObjects[1].GetComponent<CountryObject>().country;
             
-           // if(attackingCountry.GetPlayer() == Gameloop.playerOnMove && Gameloop.gameState == Utils.GameStates.Attack)
-            attackingCountry.Attack(GameObjects[1].GetComponent<CountryObject>().country);
+            if(textMeshProUGUI.text == "End Attack")
+                attackingCountry.Attack(GameObjects[1].GetComponent<CountryObject>().country);
+            
+            else if (textMeshProUGUI.text == "End Stabilization" &&
+                     attackingCountry.HasSamePlayer(defendingCountry) &&
+                     attackingCountry.IsNeighbor(defendingCountry))
+            {
+                attackingCountry.TransferTroops(defendingCountry, 1);
+            }
             
             ChangeTextColor(GameObjects[0], Color.black);
             ChangeTextColor(GameObjects[1], Color.black);
@@ -44,6 +56,31 @@ public class Attack : MonoBehaviour
     {
         TextMeshProUGUI textMeshProUGUI = gm.transform.GetChild(0).GameObject().GetComponent<TextMeshProUGUI>();
         textMeshProUGUI.color = color;
+    }
+
+    public void GameStateButtonHasBeenClicked()
+    {
+        
+        switch (textMeshProUGUI.text)
+        {
+            case "End Attack":
+                textMeshProUGUI.text = "End Stabilization";
+                break;
+            case "End Stabilization":
+                textMeshProUGUI.text = "End Place Troups";
+                break;
+                
+                
+            case "End Place Troups":
+                textMeshProUGUI.text = "End Attack";
+                break;
+            
+            default:
+                textMeshProUGUI.text = "End Attack";
+                break;
+                
+                
+        }
     }
     
 }

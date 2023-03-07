@@ -100,7 +100,7 @@ namespace BackEndRefactored
                 Troops =+ amountOfAttackingTroops + 1;
         }
 
-        private bool HasSamePlayer(Country countryToAttack)
+        public bool HasSamePlayer(Country countryToAttack)
         {
             if (countryToAttack.GetPlayer() == GetPlayer())
                 return true;
@@ -111,14 +111,15 @@ namespace BackEndRefactored
 
         public void TransferTroops(Country countryToGetTroops, int amount) 
         {
-            if (Troops <= amount + 1)
+            if(countryToGetTroops.HasSamePlayer(this) && countryToGetTroops.IsNeighbor(this))
+            if (Troops <= amount)
                 return;
 
             Troops -= amount;
             countryToGetTroops.Troops += amount;
         }
 
-        private bool IsNeighbor(Country countryToCheck)
+        public bool IsNeighbor(Country countryToCheck)
         {
             if(NeighborCountrys == null) return false;
 
