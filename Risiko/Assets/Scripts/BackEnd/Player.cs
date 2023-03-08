@@ -14,7 +14,7 @@ namespace BackEndRefactored
         private readonly Utils.PlayerNames Name;
         public List<Country> OwnedCountries { get; set; } = new();
         public Color playerColor;
-        public string playerName;
+        public string playerName = "Test";
         public bool isHuman;
         public Player(Utils.PlayerNames name, Color playerColor)
         {
@@ -83,8 +83,8 @@ namespace BackEndRefactored
 
         public int GetBonus()
         {
-            int bonus = GetContinentBonus();
-           // Debug.Log("Continent " + bonus);
+            int bonus = GetContinentBonus(); 
+            Debug.Log("Continent " + bonus);
             bonus += OwnedCountries.Count / 3;
             
             return Math.Max(3,bonus);
@@ -93,22 +93,28 @@ namespace BackEndRefactored
         private int GetContinentBonus()
         {
             int continentBonus = 0;
+            Debug.Log("Get Continentbonus");
             if (HasContinent(Initialize.northAmerika) || HasContinent(Initialize.europe))
+                
                 continentBonus += 5;
 
             if (HasContinent(Initialize.southAmerika) || HasContinent(Initialize.australia))
+            {
+                Debug.Log("has full australia");
                 continentBonus += 2;
+            }
+
 
             if (HasContinent(Initialize.africa))
                 continentBonus += 3;
 
             if (HasContinent(Initialize.asia))
                 continentBonus += 7;
-
+    
             return continentBonus;
         }
 
-        private bool HasContinent(Country[] continent)
+        public bool HasContinent(Country[] continent)
         {
             foreach (Country country in continent)
             {

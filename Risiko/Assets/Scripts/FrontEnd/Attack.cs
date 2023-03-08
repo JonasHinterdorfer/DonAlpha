@@ -82,6 +82,7 @@ public class Attack : MonoBehaviour
     {
         int amount = player.GetBonus();
         Debug.Log($"Toops: {amount}");
+        Debug.Log(playingPlayer.HasContinent(Initialize.australia));
         _troopsToDistriubteText.text = amount.ToString();
     }
 
