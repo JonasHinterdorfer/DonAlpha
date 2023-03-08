@@ -15,7 +15,7 @@ namespace BackEndRefactored
         public List<Country> OwnedCountries { get; set; } = new();
         public Color playerColor;
         public string playerName;
-        public bool isHuman;
+        public int isHuman;
         public Player(Utils.PlayerNames name, Color playerColor)
         {
             Name = name;

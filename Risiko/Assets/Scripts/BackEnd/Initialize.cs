@@ -98,7 +98,7 @@ namespace BackEndRefactored
         public static Player playerPurple = new(Utils.PlayerNames.Purple, Color.magenta);
         public static Player playerBlue = new(Utils.PlayerNames.Blue, Color.blue);
 
-        public static Player[] players = {playerBlue, playerGreen, playerPurple, playerRed, playerYellow};
+        public static Player[] players = {playerRed, playerYellow, playerGreen, playerPurple, playerBlue };
        
         /// <summary>
         /// The constructor here all Coordiantes are register for every country there is a own methode
@@ -193,6 +193,7 @@ namespace BackEndRefactored
 
         private static void DistributePlayerToCountries(Player[] players)
         {
+            Debug.Log("Initialize: " + players.Length);
             List<Country> countriesLeft = new();
 
             foreach (Country country in Initialize.global)
@@ -206,6 +207,7 @@ namespace BackEndRefactored
             {
                 for (int i = 0; i < players.Length; i++)
                 {
+                    Debug.Log(players[i].playerName);
                     if (countriesLeft.Count > 0)
                     {
                         int countryToRemove = Utils.random.Next(0, countriesLeft.Count);
