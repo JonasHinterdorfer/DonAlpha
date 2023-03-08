@@ -43,8 +43,8 @@ namespace BackEndRefactored
             int amountOfAttackingTroops = Troops - 1; ; // Here to change 
             int amoutOfDefenceTroops = countryToAttack.Troops;
             
-            Debug.Log(amountOfAttackingTroops + " at st");
-            Debug.Log(amoutOfDefenceTroops + " de st");
+            //Debug.Log(amountOfAttackingTroops + " at st");
+            //Debug.Log(amoutOfDefenceTroops + " de st");
 
             if (!IsNeighbor(countryToAttack) || amountOfAttackingTroops < 1 || HasSamePlayer(countryToAttack))
             {
@@ -52,12 +52,12 @@ namespace BackEndRefactored
                 return;
             }
 
-            Debug.Log("Are Neighbors");
+           // Debug.Log("Are Neighbors");
             
             int[] attackerCubes = GetCubes(Math.Min(3, amountOfAttackingTroops));
             int[] defenceCubes = GetCubes(Math.Min(2, countryToAttack.Troops));
             
-            Debug.Log($"Times Cubes Thrown: {Math.Min(defenceCubes.Length, attackerCubes.Length)}");
+           // Debug.Log($"Times Cubes Thrown: {Math.Min(defenceCubes.Length, attackerCubes.Length)}");
             //Debug.Log($"Attackercubes: {attackerCubes[0]}");
             //Debug.Log($"Defendercubes: {defenceCubes[0]}");
             
@@ -67,14 +67,14 @@ namespace BackEndRefactored
 
                 if (amoutOfDefenceTroops == 0 || amountOfAttackingTroops < 1)
                 {
-                    Debug.Log("break");
+                   // Debug.Log("break");
                     break;
                 }
 
                 
-                Debug.Log($"Attacking {i + 1} time");
-                Debug.Log(attackerCubes[i] + " at");
-                Debug.Log(defenceCubes[i] + " de");
+               // Debug.Log($"Attacking {i + 1} time");
+               // Debug.Log(attackerCubes[i] + " at");
+               // Debug.Log(defenceCubes[i] + " de");
                 
                 if (attackerCubes[i] > defenceCubes[i])
                     amoutOfDefenceTroops --;
@@ -83,8 +83,8 @@ namespace BackEndRefactored
                     amountOfAttackingTroops--;
                 }
                 
-                Debug.Log($"Attacking: {amountOfAttackingTroops}");
-                Debug.Log($"Defence: {amoutOfDefenceTroops}");
+              //  Debug.Log($"Attacking: {amountOfAttackingTroops}");
+               // Debug.Log($"Defence: {amoutOfDefenceTroops}");
             }
 
 
@@ -128,7 +128,7 @@ namespace BackEndRefactored
                 if(country ==countryToCheck) return true;   
             }
                 
-            Debug.Log("are not neighbors");
+            //Debug.Log("are not neighbors");
             
             return false;
         }

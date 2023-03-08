@@ -84,9 +84,9 @@ namespace BackEndRefactored
         public int GetBonus()
         {
             int bonus = GetContinentBonus();
-
-            bonus += GetTroops() / 3;
-
+           // Debug.Log("Continent " + bonus);
+            bonus += OwnedCountries.Count / 3;
+            
             return Math.Max(3,bonus);
         }
 
