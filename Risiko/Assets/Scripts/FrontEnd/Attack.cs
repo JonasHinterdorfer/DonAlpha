@@ -66,6 +66,7 @@ public class Attack : MonoBehaviour
                 {
                     attackingCountry.TransferTroops(defendingCountry, 1);
                 }
+
             }
             
             ChangeTextColor(GameObjects[0], Color.black);
@@ -140,7 +141,7 @@ public class Attack : MonoBehaviour
                 
                 GetNextPlayer(ref playingPlayer);
                 SetPlayerDisplay(playingPlayer);
-                SetTroopsText(Initialize.players[0]);
+                SetTroopsText(playingPlayer);
                 break;
             
             case "End Place Troups":
