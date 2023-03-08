@@ -23,7 +23,7 @@ public class CountryObject : MonoBehaviour
         _image = this.GetComponent<Image>();
         
         country = _utils.GetCountry[gameObject.name];
-        Debug.Log(country.GetName());
+        //Debug.Log(country.GetName());
     }
     
     void Update()
