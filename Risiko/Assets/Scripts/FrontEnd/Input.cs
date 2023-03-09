@@ -60,12 +60,14 @@ namespace BackEndRefactored
                     text.color = Color.red;
                     isValid = false;
                 }
+                /*
                 else if(LoadPlayer.allNames.Contains(name))
                 {
                     text.text = "Name exist";
                     text.color = Color.red;
                     isValid = false;
                 }
+                */
                 else
                 {
                     isValid = true;
