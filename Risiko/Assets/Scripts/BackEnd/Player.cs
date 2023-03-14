@@ -24,7 +24,7 @@ namespace BackEndRefactored
 
         public Utils.PlayerNames GetName() => Name;
 
-        public int GetTroops()
+        private int GetTroops()
         {
             int Troops = 0;
             foreach (Country country in OwnedCountries)

@@ -95,11 +95,9 @@ namespace BackEndRefactored
             { "PlayerGreen", Initialize.playerGreen },
             { "PlayerPink", Initialize.playerPurple }
         };
-        
-        public enum GameStates
-        {
-            Attack, MoveTroups
-        }
+
+        public static string[] gameStates = 
+            new[] { "Place All Troops!", "End Attack", "End Stabilization" };
 
     }
 }

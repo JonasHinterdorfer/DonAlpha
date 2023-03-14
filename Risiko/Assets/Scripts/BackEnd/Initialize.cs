@@ -1,7 +1,4 @@
-﻿
-
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 namespace BackEndRefactored
@@ -113,11 +110,6 @@ namespace BackEndRefactored
             RegisterSouthAmerikaNeighborCountrys();
 
             DistributeCountriesAndTroops(players);
-            foreach (var player in players)
-            {
-                Debug.Log($"{player.GetName()}:\n\tTroops:{player.GetTroops()}");
-                Debug.Log($"Countries: {player.OwnedCountries.Count} ");
-            }
         }
 
         private static void RegisterEuropeNeighborCountrys()

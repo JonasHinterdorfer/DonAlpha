@@ -666,8 +666,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 77272763}
@@ -948,8 +948,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 113858180}
@@ -1307,8 +1307,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 178670476}
@@ -1767,8 +1767,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 251461220}
@@ -2117,8 +2117,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 305268752}
@@ -2264,8 +2264,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 305345438}
@@ -2411,8 +2411,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 326507175}
@@ -2558,8 +2558,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 333760912}
@@ -2705,8 +2705,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 343112047}
@@ -3284,8 +3284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e768a2eb37532b34bb9ebff2840ebe13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameObjects: []
-  _canAttack: 0
 --- !u!114 &455136980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3396,8 +3394,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 526262774}
@@ -3543,8 +3541,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 587265019}
@@ -4008,8 +4006,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 652241058}
@@ -4155,8 +4153,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 672884692}
@@ -4707,8 +4705,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 731702495}
@@ -4854,8 +4852,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 787503437}
@@ -5348,8 +5346,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 853813283}
@@ -5765,8 +5763,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 873516709}
@@ -5912,8 +5910,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 877812321}
@@ -6194,8 +6192,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 908843735}
@@ -6383,8 +6381,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 941867365}
@@ -6935,8 +6933,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 959557240}
@@ -7082,8 +7080,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 974282708}
@@ -7229,8 +7227,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 985228438}
@@ -7376,8 +7374,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 995637264}
@@ -7658,8 +7656,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1084377226}
@@ -7805,8 +7803,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1099804800}
@@ -8222,8 +8220,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1203374353}
@@ -8369,8 +8367,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1206823925}
@@ -8651,8 +8649,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1227763216}
@@ -8798,8 +8796,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1256480135}
@@ -8932,8 +8930,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: GameStateButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnGameStateButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9079,8 +9077,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1276096977}
@@ -9226,8 +9224,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1292337872}
@@ -9719,8 +9717,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1424930249}
@@ -9866,8 +9864,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1442099428}
@@ -10148,8 +10146,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1455768652}
@@ -10340,8 +10338,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1498766934}
@@ -11702,8 +11700,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1766588090}
@@ -11849,8 +11847,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1906899502}
@@ -11996,8 +11994,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1912614710}
@@ -12278,8 +12276,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1920735633}
@@ -12830,8 +12828,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2002752707}
@@ -13114,8 +13112,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455136979}
-        m_TargetAssemblyTypeName: Attack, Assembly-CSharp
-        m_MethodName: ButtonHasBeenClicked
+        m_TargetAssemblyTypeName: FrontEnd.GameLoop, Assembly-CSharp
+        m_MethodName: OnCountryButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2099336326}
