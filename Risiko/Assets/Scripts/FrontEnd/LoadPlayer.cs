@@ -58,7 +58,7 @@ namespace BackEndRefactored
 
         private void SwitchScene()
         {
-            SceneManager.LoadScene(sceneBuildIndex: 1);
+            SceneManager.LoadScene(sceneBuildIndex: 0);
             foreach (Player player in Initialize.players)
             {
                 Debug.Log(player.playerName);

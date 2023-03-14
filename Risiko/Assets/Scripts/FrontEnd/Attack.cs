@@ -26,18 +26,41 @@ public class Attack : MonoBehaviour
         _troopsToDistriubteText = GetTextMeshProComponentFromButton("TroopsAmount");
 
         
+        
         SetPlayerDisplay(playingPlayer);
         SetTroopsText(playingPlayer);
         gameStateText.text = "End Place Troups";
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameStateText.text == "End Place Troups" 
+        
+        if (playingPlayer.isHuman > 0)
+        {
+            
+            Debug.ClearDeveloperConsole();
+            Debug.Log("Ki");
+            
+            Debug.Log("ishuman " + playingPlayer.isHuman);
+            
+            
+            KI.BotExecute(playingPlayer, false);
+            Debug.Log("playing plyer " + playingPlayer.GetName());
+            GetNextPlayer(ref playingPlayer);
+            Debug.Log("playing plyer " + playingPlayer.GetName());
+            
+            
+            GameStateButtonHasBeenClicked();
+            
+            GameStateButtonHasBeenClicked();
+            GameStateButtonHasBeenClicked();
+        }
+        
+        else if (gameStateText.text == "End Place Troups" 
             && GameObjects.Count == 1
-            )
+           )
         {
             if (GameObjects[0].GetComponent<CountryObject>().country.GetPlayer() == playingPlayer)
             {
@@ -156,7 +179,7 @@ public class Attack : MonoBehaviour
     void GetNextPlayer(ref Player player)
     {
         int index = 0;
-        for (int i = 0; i < Initialize.players.Length; i++)
+        for (int i = 0; i <= Initialize.players.Length; i++)
         {
             if (Initialize.players[i] == player)
             {

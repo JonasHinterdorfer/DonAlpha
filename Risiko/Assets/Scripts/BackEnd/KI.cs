@@ -12,11 +12,11 @@ namespace BackEndRefactored
     public class KI : MonoBehaviour
     {
 
-        private static List<int[]> PlaceTroops(int color)
+        private static List<int[]> PlaceTroops(Player color)
         {
             string information = string.Empty;
 
-            Player botName = GetPlayerByColorInt(color);
+            Player botName = color;
 
             int troopCount = botName.GetBonus();
             
@@ -51,7 +51,7 @@ namespace BackEndRefactored
             return placing;
         }
 
-        private static List<int[]> GetPlaceTroopsByInfo(string information, int troopCount, int color)
+        private static List<int[]> GetPlaceTroopsByInfo(string information, int troopCount, Player color)
         {
             List<int[]> placing = new();
             int max = 0;
@@ -118,7 +118,7 @@ namespace BackEndRefactored
             return placing;
         }
 
-        private static List<int[]> GetPlacing(int troopCount, int maxCountry, int secondMaxCountry, int thirdMaxCountry, int max, int secondMax, int thirdMax, int color)
+        private static List<int[]> GetPlacing(int troopCount, int maxCountry, int secondMaxCountry, int thirdMaxCountry, int max, int secondMax, int thirdMax, Player color)
         {
             List<int[]> placing = new();
             int sum = max + secondMax + thirdMax;
@@ -154,9 +154,9 @@ namespace BackEndRefactored
             return placing;
         }
 
-        private static List<int[]> DebugMove(int color, int troopCount)
+        private static List<int[]> DebugMove(Player color, int troopCount)
         {
-            Player botPlayer = GetPlayerByColorInt(color);
+            Player botPlayer = color;
 
             foreach(Country country in Initialize.global)
             {
@@ -181,9 +181,9 @@ namespace BackEndRefactored
             return debugPlace;
         }
         
-        private static Country[] BotAttack(int color)
+        private static Country[] BotAttack(Player color)
         {
-            Player botName = GetPlayerByColorInt(color);
+            Player botName = color;
 
             Country[] attackCountryAttackedCountry = GetArrayByLoop(botName);
             int maxChance = GetMaxChanceByLoop(botName);
@@ -278,7 +278,7 @@ namespace BackEndRefactored
             return maxChance;
         }
 
-        public static void BotExecute(int color, bool version2)
+        public static void BotExecute(Player color, bool version2)
         {
             List<int[]> placeDictionary = PlaceTroops(color);
 
@@ -313,9 +313,9 @@ namespace BackEndRefactored
             }
         }
 
-        public static int[] BotTransfer(int botColor)
+        public static int[] BotTransfer(Player botColor)
         {
-            Player botPlayer = GetPlayerByColorInt(botColor);
+            Player botPlayer = botColor;
             int[] transfer = new int[3];
             int maxLevel = 0;
             Country maxComeFromCountry = Initialize.global[0];
