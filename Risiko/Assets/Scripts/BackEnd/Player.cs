@@ -72,14 +72,7 @@ namespace BackEndRefactored
         }
 
         public bool HasFullMap()
-        {
-            foreach (Country country in Initialize.global)
-            {
-                if(country.GetPlayer() != this)
-                    return false;
-            }
-            return true;
-        }
+            => OwnedCountries.Count == Initialize.global.Length;
 
         public int GetBonus()
         {

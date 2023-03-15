@@ -4,6 +4,7 @@ using BackEndRefactored;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace FrontEnd
@@ -12,12 +13,19 @@ namespace FrontEnd
     {
         private List<GameObject> _clickedObjects = new ();
         private GameObject _gameStateButton, _playerTextDisplay, _troopsToSpreadDisplay;
-        private Player _playingPlayer = Initialize.players[0];
+        private Player _playingPlayer;
         private TextMeshProUGUI _gameStateText, _playerText, _troopsToSpreadText;
         private Image _playerTextBackground;
         private int _gameStateIndex;
+
+        private List<Player> _allPlayers = new List<Player>();
         private void Start()
         {
+            foreach (var player in Initialize.players)
+            {
+                _allPlayers.Add(player);
+            }
+            
             _gameStateButton = GameObject.Find("GameStateButton");
             _gameStateText = GetTextComponent(_gameStateButton);
 
@@ -27,8 +35,8 @@ namespace FrontEnd
        
             _troopsToSpreadDisplay = GameObject.Find("TroopsAmount");
             _troopsToSpreadText = GetTextComponent(_troopsToSpreadDisplay);
-            
-            
+
+            _playingPlayer = _allPlayers[0];
             _playerTextBackground.color = _playingPlayer.playerColor;
             RefreshButtonText(_playerText, _playingPlayer.playerName);
             RefreshButtonText(_troopsToSpreadText, _playingPlayer.GetBonus().ToString());
@@ -58,6 +66,7 @@ namespace FrontEnd
                 ChangeTextColor(textObject, Color.black);
                 
                 _clickedObjects = new List<GameObject>();
+
                 
 
             }
@@ -89,7 +98,22 @@ namespace FrontEnd
 
                 _clickedObjects = new List<GameObject>();
             }
+
+            
         }
+
+        private void CheckPlayerLost()
+        {
+            
+            foreach (Player player in _allPlayers)
+            {
+                if (player.OwnedCountries.Count == 0)
+                    _allPlayers.Remove(player);
+            }
+
+
+        }
+
 
         private void SubtractTroopsToPlaceText(Country country)
         {
@@ -110,6 +134,25 @@ namespace FrontEnd
             _troopsToSpreadText.text = amount.ToString();
         }
 
+        private void CheckWin()
+        {
+            foreach (var player in _allPlayers)
+            {
+                if (player.HasFullMap())
+                {
+                   // Here to Disable for Testing
+                    SwitchScene();
+                }
+                
+
+            }
+        }
+        
+        private void SwitchScene()
+        {
+            SceneManager.LoadScene(sceneBuildIndex: 2);
+        }
+        
         private TextMeshProUGUI GetTextComponent(GameObject gm) 
             => gm.transform.GetChild(0).GameObject().GetComponent<TextMeshProUGUI>();
 
@@ -136,6 +179,8 @@ namespace FrontEnd
                 ChangeToNextPlayerMove();
                 _gameStateButton.SetActive(false);
             }
+
+            
         }
 
         private void GetNextIndex(ref int index, int lenght)
@@ -151,9 +196,9 @@ namespace FrontEnd
 
         private void GetNextPlayer(ref Player player)
         {
-            int index = Array.IndexOf(Initialize.players, player);
-            GetNextIndex(ref index, Initialize.players.Length);
-            player = Initialize.players[index];
+            int index = _allPlayers.IndexOf(player);
+            GetNextIndex(ref index, _allPlayers.Count);
+            player = _allPlayers[index];
         }
 
         private void ChangeToNextPlayerMove()
@@ -162,6 +207,8 @@ namespace FrontEnd
             _playerTextBackground.color = _playingPlayer.playerColor;
             RefreshButtonText(_playerText, _playingPlayer.playerName);
             RefreshButtonText(_troopsToSpreadText, _playingPlayer.GetBonus().ToString());
+            CheckPlayerLost();
+            CheckWin();
         }
     }
 }
