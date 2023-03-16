@@ -25,13 +25,13 @@ namespace BackEndRefactored
                 int informationInt = 0;
                 Country country = Initialize.global[i];
                 int troops = country.Troops;
-                Player? playerOfCountry = country.GetPlayer();
-                Country[]? neighbours = country.GetNeighborCountrys();
+                Player playerOfCountry = country.GetPlayer();
+                Country[] neighbours = country.GetNeighborCountrys();
                 if (botName == playerOfCountry && neighbours != null)
                 {
                     foreach (Country neighbourCountry in neighbours)
                     {
-                        Player? neighbourPlayer = neighbourCountry.GetPlayer();
+                        Player neighbourPlayer = neighbourCountry.GetPlayer();
                         int neighbourTroops = neighbourCountry.Troops;
                         if (neighbourPlayer != botName)
                         {
@@ -53,7 +53,6 @@ namespace BackEndRefactored
 
         private static List<int[]> GetPlaceTroopsByInfo(string information, int troopCount, Player color)
         {
-            List<int[]> placing = new();
             int max = 0;
             int maxCountry = 0;
             int secondMax = 0;
@@ -113,7 +112,7 @@ namespace BackEndRefactored
                 thirdMax = 0;
             }
 
-            placing = GetPlacing(troopCount, maxCountry, secondMaxCountry, thirdMaxCountry, max, secondMax, thirdMax, color);
+            List<int[]> placing = GetPlacing(troopCount, maxCountry, secondMaxCountry, thirdMaxCountry, max, secondMax, thirdMax, color);
 
             return placing;
         }
@@ -218,17 +217,17 @@ namespace BackEndRefactored
             for (int i = 0; i < 42; i++)
             {
                 Country country = Initialize.global[i];
-                Player? playerNameOfCountry = country.GetPlayer();
+                Player playerNameOfCountry = country.GetPlayer();
                 int troops = country.Troops;
                 if (botName == playerNameOfCountry)
                 {
-                    Country[]? neighbours = country.GetNeighborCountrys();
+                    Country[] neighbours = country.GetNeighborCountrys();
                     if (neighbours != null)
                     {
                         for (int i1 = 0; i1 < neighbours.Length; i1++)
                         {
                             Country neighbourCountry = neighbours[i1];
-                            Player? neighbourPlayer = neighbourCountry.GetPlayer();
+                            Player neighbourPlayer = neighbourCountry.GetPlayer();
                             int neighbourTroops = neighbourCountry.Troops;
                             if (neighbourPlayer != botName)
                             {
@@ -252,17 +251,17 @@ namespace BackEndRefactored
             for (int i = 0; i < 42; i++)
             {
                 Country country = Initialize.global[i];
-                Player? playerNameOfCountry = country.GetPlayer();
+                Player playerNameOfCountry = country.GetPlayer();
                 int troops = country.Troops;
                 if (botName == playerNameOfCountry)
                 {
-                    Country[]? neighbours = country.GetNeighborCountrys();
+                    Country[] neighbours = country.GetNeighborCountrys();
                     if (neighbours != null)
                     {
                         for (int i1 = 0; i1 < neighbours.Length; i1++)
                         {
                             Country neighbourCountry = neighbours[i1];
-                            Player? neighbourPlayer = neighbourCountry.GetPlayer();
+                            Player neighbourPlayer = neighbourCountry.GetPlayer();
                             int neighbourTroops = neighbourCountry.Troops;
                             if (neighbourPlayer != botName)
                             {
@@ -398,10 +397,10 @@ namespace BackEndRefactored
         private static void AfterAttackTransferExecute(Country countryOne, Country countryTwo)
         {
             int[] afterAttackArray = AfterAttackTransfer(countryOne, countryTwo);
-            int countryOneTroops = countryOne.Troops;
-            int countryTwoTroops = countryTwo.Troops;
-            int distanceOne = countryOneTroops - afterAttackArray[0];
-            int distance = Math.Abs(countryOneTroops - afterAttackArray[0]);
+            int distanceOne = countryOne.Troops - afterAttackArray[0];
+            int distanceTwo = countryTwo.Troops - afterAttackArray[1];
+
+            Debug.Log(distanceOne);
 
             if(distanceOne > 0)
             {
@@ -409,7 +408,7 @@ namespace BackEndRefactored
             }
             else
             {
-                countryOne.TransferTroops(countryOne, distanceOne);
+                countryOne.TransferTroops(countryTwo , distanceTwo);
             }
         }
 

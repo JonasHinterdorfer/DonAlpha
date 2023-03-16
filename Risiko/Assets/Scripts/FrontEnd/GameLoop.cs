@@ -49,7 +49,7 @@ namespace FrontEnd
             
             if (_playingPlayer.isHuman > 0)
             {
-                KI.BotExecute(_playingPlayer, false);
+                KI.BotExecute(_playingPlayer, true);
                 _gameStateIndex = 0;
                 RefreshButtonText(_gameStateText, Utils.gameStates[_gameStateIndex]);
                 ChangeToNextPlayerMove();

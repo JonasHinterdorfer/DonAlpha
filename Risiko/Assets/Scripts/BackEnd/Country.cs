@@ -104,19 +104,21 @@ namespace BackEndRefactored
         {
             if (countryToAttack.GetPlayer() == GetPlayer())
                 return true;
-            
-            Debug.Log("Dont have the same Player");
+           
             return false;
         }
 
-        public void TransferTroops(Country countryToGetTroops, int amount) 
+        public void TransferTroops(Country countryToGetTroops, int amount)
         {
-            if(countryToGetTroops.HasSamePlayer(this) && countryToGetTroops.IsNeighbor(this))
-            if (Troops <= amount)
-                return;
+            if (countryToGetTroops.HasSamePlayer(this) && countryToGetTroops.IsNeighbor(this))
+            {
+                if (Troops <= amount)
+                    return;
 
-            Troops -= amount;
-            countryToGetTroops.Troops += amount;
+                Troops -= amount;
+                countryToGetTroops.Troops += amount;
+            }
+        
         }
 
         public bool IsNeighbor(Country countryToCheck)
