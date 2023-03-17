@@ -112,6 +112,51 @@ namespace BackEndRefactored
                 thirdMax = 0;
             }
 
+            if(maxCountry == 0)
+            {
+                if (Initialize.global[0].GetPlayer() != color)
+                {
+                    if(secondMaxCountry != 0)
+                    {
+                        maxCountry = secondMaxCountry;
+                    }
+                    else
+                    {
+                        maxCountry = thirdMaxCountry;
+                    }
+                }
+            }
+
+            if (secondMaxCountry == 0)
+            {
+                if (Initialize.global[0].GetPlayer() != color)
+                {
+                    if (maxCountry != 0)
+                    {
+                        secondMaxCountry = maxCountry;
+                    }
+                    else
+                    {
+                        secondMaxCountry = thirdMaxCountry;
+                    }
+                }
+            }
+
+            if (thirdMaxCountry == 0)
+            {
+                if (Initialize.global[0].GetPlayer() != color)
+                {
+                    if (maxCountry != 0)
+                    {
+                        thirdMaxCountry = maxCountry;
+                    }
+                    else
+                    {
+                        thirdMaxCountry = secondMax;
+                    }
+                }
+            }
+
             List<int[]> placing = GetPlacing(troopCount, maxCountry, secondMaxCountry, thirdMaxCountry, max, secondMax, thirdMax, color);
 
             return placing;

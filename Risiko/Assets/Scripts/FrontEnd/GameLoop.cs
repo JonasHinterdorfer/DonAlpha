@@ -46,7 +46,7 @@ namespace FrontEnd
 
         private void Update()
         {
-            
+            CheckWin();
             if (_playingPlayer.isHuman > 0)
             {
                 KI.BotExecute(_playingPlayer, true);
@@ -81,13 +81,14 @@ namespace FrontEnd
                     {
                         attackingCountry.Attack(defendingCountry);
                     }
-                        
                     else if (_gameStateText.text == "End Stabilization"
                              && attackingCountry.HasSamePlayer(defendingCountry)
                              && attackingCountry.IsNeighbor(defendingCountry))
                     {
                         attackingCountry.TransferTroops(defendingCountry, 1);
                     }
+
+                    CheckWin();
                     
                 }
                 TextMeshProUGUI textObject = GetTextComponent(_clickedObjects[0]);
