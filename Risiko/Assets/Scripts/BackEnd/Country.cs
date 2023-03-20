@@ -121,6 +121,12 @@ namespace BackEndRefactored
         
         }
 
+        public void TransferTroopsWithoutQuestion(Country countryToGetTroops, int amount)
+        {
+            Troops += amount;
+            countryToGetTroops.Troops -= amount;
+        }
+
         public bool IsNeighbor(Country countryToCheck)
         {
             if(NeighborCountrys == null) return false;

@@ -17,7 +17,7 @@ public class testgamelooop : MonoBehaviour
     {
         foreach (var player in Initialize.players)
         {
-            KI.BotExecute(player, false);
+            KI.BotExecute(player, 3);
         }
     }
 }

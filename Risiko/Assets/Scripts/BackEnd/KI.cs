@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using Unity.VisualScripting;
 
 namespace BackEndRefactored
 {
@@ -322,9 +323,14 @@ namespace BackEndRefactored
             return maxChance;
         }
 
-        public static void BotExecute(Player color, bool version2)
+        public static void BotExecute(Player color, int version)
         {
             List<int[]> placeDictionary = PlaceTroops(color);
+
+            if (version > 2)
+            {
+                BeAThief(color);
+            }
 
             foreach(int[] countryIntArray in placeDictionary)
             {
@@ -343,14 +349,14 @@ namespace BackEndRefactored
                 {
                     attackCountryAttackedCountry = KI.BotAttack(color);
                     attackCountryAttackedCountry[0].Attack(attackCountryAttackedCountry[1]);
-                    if(version2)
+                    if(version > 1)
                     {
                         AfterAttackTransferExecute(attackCountryAttackedCountry[0], attackCountryAttackedCountry[1]);
                     }
                 }
             }
 
-            if(version2)
+            if(version > 1)
             {
                 int[] transferArray = BotTransfer(color);
                 Initialize.global[transferArray[1]].TransferTroops(Initialize.global[transferArray[0]], transferArray[2]);
@@ -474,6 +480,42 @@ namespace BackEndRefactored
                 afterAttackTransferArray[1] = countryTwoTroopsInt;
             }
             return afterAttackTransferArray;
+        }
+
+        public static void BeAThief(Player player)
+        {
+            int maxDesperateLevel = int.MinValue;
+            Country maxDesperateCountry = Initialize.global[0];
+            foreach(Country country in Initialize.global)
+            {
+                int desperateLevel = -1 * GetDesperateLevel(country);
+                if(desperateLevel > maxDesperateLevel)
+                {
+                    maxDesperateLevel = desperateLevel;
+                    maxDesperateCountry = country;
+                }
+            }
+
+            GetTroopsFromOthers(player, maxDesperateCountry);
+        }
+
+        public static void GetTroopsFromOthers(Player player, Country countryToMoveTroopsTo)
+        {
+            int maxTroops = 0;
+            Country maxCountry = Initialize.global[0];
+            foreach(Country country in Initialize.global)
+            {
+                if(country.GetPlayer() != player)
+                {
+                    if(country.Troops > maxTroops)
+                    {
+                        maxTroops = country.Troops;
+                        maxCountry = country;
+                    }
+                }
+            }
+
+            countryToMoveTroopsTo.TransferTroopsWithoutQuestion(maxCountry, maxTroops - 1);
         }
     }
 }
