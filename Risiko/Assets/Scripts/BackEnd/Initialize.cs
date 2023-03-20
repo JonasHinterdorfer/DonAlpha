@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
+using System.IO;
+using FrontEnd;
 
 namespace BackEndRefactored
 {
@@ -180,12 +183,11 @@ namespace BackEndRefactored
         {
             DistributePlayerToCountries(players);
             DistributeTroopsToCountries(players);
-
+            GameLogInit(players);
         }
 
         private static void DistributePlayerToCountries(Player[] players)
         {
-            Debug.Log("Initialize: " + players.Length);
             List<Country> countriesLeft = new();
 
             foreach (Country country in Initialize.global)
@@ -199,7 +201,6 @@ namespace BackEndRefactored
             {
                 for (int i = 0; i < players.Length; i++)
                 {
-                    Debug.Log(players[i].playerName);
                     if (countriesLeft.Count > 0)
                     {
                         int countryToRemove = Utils.random.Next(0, countriesLeft.Count);
@@ -232,7 +233,48 @@ namespace BackEndRefactored
                 }
             }
         }
-        
+
+        private static void GameLogInit(Player[] players)
+        {
+            File.WriteAllText("Logs\\gameLog.txt", string.Empty);
+            foreach (Player player in players)
+            {
+                string stringToAdd = string.Empty;
+                stringToAdd += "I-";
+                stringToAdd += GetStringByPlayer(player);
+                foreach(Country country in player.OwnedCountries)
+                {
+                    stringToAdd += "-";
+                    stringToAdd += Array.IndexOf(global, country);
+                }
+                Utils.gameLog.Add(stringToAdd);
+            }
+        }
+
+        private static string GetStringByPlayer(Player player)
+        {
+            if (player == playerRed)
+            {
+                return "R";
+            }
+            else if (player == playerYellow)
+            {
+                return "GR";
+            }
+            else if (player == playerBlue)
+            {
+                return "B";
+            }
+            else if (player == playerGreen)
+            {
+                return "GN";
+            }
+            else
+            {
+                return "P";
+            }
+        }
+
         private static int GetTroops(int amountOfPlayers)
         {
             switch (amountOfPlayers)
