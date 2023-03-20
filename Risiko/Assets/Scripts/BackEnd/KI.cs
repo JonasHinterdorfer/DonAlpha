@@ -486,17 +486,20 @@ namespace BackEndRefactored
         {
             int maxDesperateLevel = int.MinValue;
             Country maxDesperateCountry = Initialize.global[0];
-            foreach(Country country in Initialize.global)
+            foreach (Country country in Initialize.global)
             {
-                int desperateLevel = -1 * GetDesperateLevel(country);
-                if(desperateLevel > maxDesperateLevel)
+                if (country.GetPlayer() == player)
                 {
-                    maxDesperateLevel = desperateLevel;
-                    maxDesperateCountry = country;
+                    int desperateLevel = -1 * GetDesperateLevel(country);
+                    if (desperateLevel > maxDesperateLevel)
+                    {
+                        maxDesperateLevel = desperateLevel;
+                        maxDesperateCountry = country;
+                    }
                 }
-            }
 
-            GetTroopsFromOthers(player, maxDesperateCountry);
+                GetTroopsFromOthers(player, maxDesperateCountry);
+            }
         }
 
         public static void GetTroopsFromOthers(Player player, Country countryToMoveTroopsTo)
