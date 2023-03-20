@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using BackEndRefactored;
 using TMPro;
 using Unity.VisualScripting;
@@ -141,11 +142,19 @@ namespace FrontEnd
             {
                 if (player.HasFullMap())
                 {
-                   // Here to Disable for Testing
+                    string logString = string.Empty;
+                    foreach (string line in Utils.gameLog)
+                    {
+                        logString += line;
+                        logString += "|";
+                    }
+
+                    StreamWriter writer = new("Logs\\gameLog.txt", true);
+                    writer.Write(logString);
+                    writer.Close();
+
                     SwitchScene();
                 }
-                
-
             }
         }
         

@@ -40,64 +40,47 @@ namespace BackEndRefactored
 
         public void Attack(Country countryToAttack)
         {
-            int amountOfAttackingTroops = Troops - 1; ; // Here to change 
+            int amountOfAttackingTroops = Troops - 1; 
             int amoutOfDefenceTroops = countryToAttack.Troops;
-            
-            //Debug.Log(amountOfAttackingTroops + " at st");
-            //Debug.Log(amoutOfDefenceTroops + " de st");
+
 
             if (!IsNeighbor(countryToAttack) || amountOfAttackingTroops < 1 || HasSamePlayer(countryToAttack))
             {
-               // Debug.Log("Are not Neighbors");
                 return;
             }
-
-           // Debug.Log("Are Neighbors");
             
             int[] attackerCubes = GetCubes(Math.Min(3, amountOfAttackingTroops));
             int[] defenceCubes = GetCubes(Math.Min(2, countryToAttack.Troops));
-            
-           // Debug.Log($"Times Cubes Thrown: {Math.Min(defenceCubes.Length, attackerCubes.Length)}");
-            //Debug.Log($"Attackercubes: {attackerCubes[0]}");
-            //Debug.Log($"Defendercubes: {defenceCubes[0]}");
-            
             
             for (int i = 0; i < Math.Min(defenceCubes.Length, attackerCubes.Length); i++)
             {
 
                 if (amoutOfDefenceTroops == 0 || amountOfAttackingTroops < 1)
                 {
-                   // Debug.Log("break");
                     break;
                 }
 
-                
-               // Debug.Log($"Attacking {i + 1} time");
-               // Debug.Log(attackerCubes[i] + " at");
-               // Debug.Log(defenceCubes[i] + " de");
-                
                 if (attackerCubes[i] > defenceCubes[i])
-                    amoutOfDefenceTroops --;
+                {
+                    Utils.gameLog.Add($"T-{Array.IndexOf(Initialize.global, countryToAttack)}-1-m");
+                    amoutOfDefenceTroops--;
+                }
                 else
                 {
                     amountOfAttackingTroops--;
                 }
-                
-              //  Debug.Log($"Attacking: {amountOfAttackingTroops}");
-               // Debug.Log($"Defence: {amoutOfDefenceTroops}");
             }
-
-
 
             if (amoutOfDefenceTroops == 0)
             {
+                Utils.gameLog.Add($"X-{Array.IndexOf(Initialize.global, this)}-{Array.IndexOf(Initialize.global, countryToAttack)}");
                 amoutOfDefenceTroops = amountOfAttackingTroops;
                 amountOfAttackingTroops = 0;
                 countryToAttack.ChangePlayer(GetPlayer());
             }
 
-                countryToAttack.Troops = amoutOfDefenceTroops;
-                Troops =+ amountOfAttackingTroops + 1;
+            countryToAttack.Troops = amoutOfDefenceTroops;
+            Troops =+ amountOfAttackingTroops + 1;
         }
 
         public bool HasSamePlayer(Country countryToAttack)
@@ -115,7 +98,9 @@ namespace BackEndRefactored
                 if (Troops <= amount)
                     return;
 
+                Utils.gameLog.Add($"T-{Array.IndexOf(Initialize.global, this)}-{amount}-m");
                 Troops -= amount;
+                Utils.gameLog.Add($"T-{Array.IndexOf(Initialize.global, countryToGetTroops)}-{amount}-p");
                 countryToGetTroops.Troops += amount;
             }
         
@@ -123,7 +108,9 @@ namespace BackEndRefactored
 
         public void TransferTroopsWithoutQuestion(Country countryToGetTroops, int amount)
         {
+            Utils.gameLog.Add($"T-{Array.IndexOf(Initialize.global, this)}-{amount}-p");
             Troops += amount;
+            Utils.gameLog.Add($"T-{Array.IndexOf(Initialize.global, countryToGetTroops)}-{amount}-m");
             countryToGetTroops.Troops -= amount;
         }
 
@@ -135,9 +122,7 @@ namespace BackEndRefactored
             {
                 if(country ==countryToCheck) return true;   
             }
-                
-            //Debug.Log("are not neighbors");
-            
+
             return false;
         }
 

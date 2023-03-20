@@ -9,6 +9,7 @@ namespace BackEndRefactored
 {
     public class Utils
     {
+        public static List<string> gameLog = new();
         public static Random random = new();    
         public enum CountryName
         {

@@ -334,6 +334,7 @@ namespace BackEndRefactored
 
             foreach(int[] countryIntArray in placeDictionary)
             {
+                Utils.gameLog.Add($"T-{countryIntArray[0]}-{countryIntArray[1]}-p");
                 int countryInt = countryIntArray[0];
                 Country country = Initialize.global[countryInt];
                 country.Troops += countryIntArray[1];
