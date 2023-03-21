@@ -10,7 +10,8 @@ namespace BackEndRefactored
     public class Utils
     {
         public static List<string> gameLog = new();
-        public static Random random = new();    
+        public static Random random = new();  
+        public static List<Player> playerGoneList = new();
         public enum CountryName
         {
             Alaska, NorthwestTerritory, Greenland, Alberta, Ontario, Quebec, WesternUS, EasternUS, CentralAmeriaca,

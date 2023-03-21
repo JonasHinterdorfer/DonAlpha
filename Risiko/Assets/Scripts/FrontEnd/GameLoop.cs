@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using BackendEndRefactored;
 using BackEndRefactored;
 using TMPro;
 using Unity.VisualScripting;
@@ -110,7 +112,11 @@ namespace FrontEnd
             foreach (Player player in _allPlayers)
             {
                 if (player.OwnedCountries.Count == 0)
+                {
                     _allPlayers.Remove(player);
+                    Utils.playerGoneList.Add(player);
+                }
+                    
             }
 
 
@@ -152,7 +158,11 @@ namespace FrontEnd
                     StreamWriter writer = new("Logs\\gameLog.txt", true);
                     writer.Write(logString);
                     writer.Close();
-
+                    foreach (string line in Utils.gameLog)
+                    {
+                        Simulate.SimulateOneMove(line);   
+                    }
+                    Debug.Log(Simulate.SimulateCounter);
                     SwitchScene();
                 }
             }
@@ -220,5 +230,7 @@ namespace FrontEnd
             CheckPlayerLost();
             CheckWin();
         }
+
+        
     }
 }

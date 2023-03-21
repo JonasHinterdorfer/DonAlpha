@@ -246,6 +246,8 @@ namespace BackEndRefactored
                 {
                     stringToAdd += "-";
                     stringToAdd += Array.IndexOf(global, country);
+                    stringToAdd += ":";
+                    stringToAdd += country.Troops;
                 }
                 Utils.gameLog.Add(stringToAdd);
             }
