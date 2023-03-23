@@ -26,6 +26,11 @@ namespace BackEndRefactored
                 Initialize.players[i].playerName = LoadPlayer.allNames[i];
             }
         }
+
+        public void OnlyKi()
+        {
+            SetPlayer(1, 0);
+        }
         public void SwitchScene()
         {
             SceneManager.LoadScene(sceneBuildIndex: 0);
