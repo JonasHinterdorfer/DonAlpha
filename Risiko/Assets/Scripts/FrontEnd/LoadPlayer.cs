@@ -20,7 +20,7 @@ namespace BackEndRefactored
         public static SaveValues purpel;
         public static SaveValues[] allPlayersArrayInStruct = {red, grey, green, purpel, blue};
         public List<Player> allPlayers = new();
-        public static string[] allNames = { string.Empty, string.Empty, string.Empty, string.Empty, string.Empty };
+        public static string[] allNames = { "red", "grey", "green", "purpel", "blue" };
         private void Update()
         {
             if (playerSum >= 3)
