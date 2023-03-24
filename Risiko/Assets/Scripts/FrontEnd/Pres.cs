@@ -11,12 +11,15 @@ namespace BackEndRefactored
         {
             Initialize.players[0].isHuman = 0;
             Initialize.players[0].playerName = LoadPlayer.allNames[0];
+            LoadPlayer.playerSum = 5;
+
             SetPlayer(1, 1);
         }
 
         public void OnlyHuman()
         {
             SetPlayer(0, 0);
+            LoadPlayer.playerSum = 5;
         }
         private void SetPlayer(int humanMode, int startIndex)
         {
@@ -24,6 +27,7 @@ namespace BackEndRefactored
             {
                 Initialize.players[i].isHuman = humanMode;
                 Initialize.players[i].playerName = LoadPlayer.allNames[i];
+                LoadPlayer.playerSum++;
             }
         }
 

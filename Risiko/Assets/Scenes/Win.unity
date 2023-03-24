@@ -426,13 +426,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316621249}
-        m_TargetAssemblyTypeName: WinData, Assembly-CSharp
-        m_MethodName: HideCanvas
-        m_Mode: 2
+      - m_Target: {fileID: 1542813996}
+        m_TargetAssemblyTypeName: BackendEndRefactored.WinData, Assembly-CSharp
+        m_MethodName: HideGameObject
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 316621248}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -726,7 +726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &211005890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -892,12 +892,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1542813996}
-        m_TargetAssemblyTypeName: WinData, Assembly-CSharp
-        m_MethodName: ShowCanvas
-        m_Mode: 2
+        m_TargetAssemblyTypeName: BackendEndRefactored.WinData, Assembly-CSharp
+        m_MethodName: ShowGameObject
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 316621248}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1052,7 +1052,6 @@ GameObject:
   - component: {fileID: 316621246}
   - component: {fileID: 316621245}
   - component: {fileID: 316621244}
-  - component: {fileID: 316621249}
   m_Layer: 5
   m_Name: Details
   m_TagString: Untagged
@@ -1080,8 +1079,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -240.97424, y: 189.53159}
-  m_SizeDelta: {x: -896.0621, y: -512.8505}
+  m_AnchoredPosition: {x: -272, y: 79.74}
+  m_SizeDelta: {x: -896.062, y: -409.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316621244
 MonoBehaviour:
@@ -1182,18 +1181,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &316621249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316621242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f030a544f1da0754fa4e0cd9690049d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &393018393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1475,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f030a544f1da0754fa4e0cd9690049d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  first: {fileID: 0}
+  second: {fileID: 0}
+  third: {fileID: 0}
+  fourth: {fileID: 0}
+  fifth: {fileID: 0}
+  can: {fileID: 0}
 --- !u!1 &1167605684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,7 +1502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1167605685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1675,12 +1668,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1542813996}
-        m_TargetAssemblyTypeName: WinData, Assembly-CSharp
-        m_MethodName: ShowCanvas
-        m_Mode: 2
+        m_TargetAssemblyTypeName: BackendEndRefactored.WinData, Assembly-CSharp
+        m_MethodName: ShowGameObject
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 316621248}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1842,7 +1835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1177458752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2007,13 +2000,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316621249}
-        m_TargetAssemblyTypeName: WinData, Assembly-CSharp
-        m_MethodName: ShowCanvas
-        m_Mode: 2
+      - m_Target: {fileID: 1542813996}
+        m_TargetAssemblyTypeName: BackendEndRefactored.WinData, Assembly-CSharp
+        m_MethodName: ShowGameObject
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 316621248}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2584,6 +2577,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f030a544f1da0754fa4e0cd9690049d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  first: {fileID: 1167605684}
+  second: {fileID: 211005889}
+  third: {fileID: 1568643857}
+  fourth: {fileID: 1798536672}
+  fifth: {fileID: 1177458751}
+  can: {fileID: 316621242}
 --- !u!1 &1568643857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,7 +2604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1568643858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2770,13 +2769,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316621249}
-        m_TargetAssemblyTypeName: WinData, Assembly-CSharp
-        m_MethodName: ShowCanvas
-        m_Mode: 2
+      - m_Target: {fileID: 1542813996}
+        m_TargetAssemblyTypeName: BackendEndRefactored.WinData, Assembly-CSharp
+        m_MethodName: ShowGameObject
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 316621248}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3209,7 +3208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1798536673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3374,13 +3373,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316621249}
-        m_TargetAssemblyTypeName: WinData, Assembly-CSharp
-        m_MethodName: ShowCanvas
-        m_Mode: 2
+      - m_Target: {fileID: 1542813996}
+        m_TargetAssemblyTypeName: BackendEndRefactored.WinData, Assembly-CSharp
+        m_MethodName: ShowGameObject
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 316621248}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
