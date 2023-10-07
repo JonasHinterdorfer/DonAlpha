@@ -40,7 +40,6 @@ namespace BackendEndRefactored
 
         public void Stop()
         {
-            UnityEditor.EditorApplication.isPlaying = false;
             Application.Quit();
         }
 

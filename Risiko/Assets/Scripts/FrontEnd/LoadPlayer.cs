@@ -2,7 +2,6 @@ using BackendEndRefactored;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -59,7 +58,7 @@ namespace BackEndRefactored
 
         private void SwitchScene()
         {
-            SceneManager.LoadScene(sceneBuildIndex: 0);
+            SceneManager.LoadScene(sceneBuildIndex: 1);
             foreach (Player player in Initialize.players)
             {
                 Debug.Log(player.playerName);
