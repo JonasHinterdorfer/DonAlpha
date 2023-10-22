@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DonAlpha.SocketAPI/1.0.0": {
+        "dependencies": {
+          "DonAlpha.Game": "1.0.0"
+        },
+        "runtime": {
+          "DonAlpha.SocketAPI.dll": {}
+        }
+      },
+      "DonAlpha.Game/1.0.0": {
+        "runtime": {
+          "DonAlpha.Game.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DonAlpha.SocketAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DonAlpha.Game/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

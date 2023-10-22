@@ -1,0 +1,157 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.SocketAPI\\DonAlpha.SocketAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.Game\\DonAlpha.Game.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.Game\\DonAlpha.Game.csproj",
+        "projectName": "DonAlpha.Game",
+        "projectPath": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.Game\\DonAlpha.Game.csproj",
+        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.Game\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.9, 7.0.9]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.9, 7.0.9]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.9, 7.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.SocketAPI\\DonAlpha.SocketAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.SocketAPI\\DonAlpha.SocketAPI.csproj",
+        "projectName": "DonAlpha.SocketAPI",
+        "projectPath": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.SocketAPI\\DonAlpha.SocketAPI.csproj",
+        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.SocketAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.Game\\DonAlpha.Game.csproj": {
+                "projectPath": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.Game\\DonAlpha.Game.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.9, 7.0.9]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.9, 7.0.9]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.9, 7.0.9]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.9, 7.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

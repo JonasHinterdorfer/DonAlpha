@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SHDbSTubFA1v2vhk8nMegk2iTllRcIZG/2mPVKmRqrtK3sqDx+teO1HnrVW2HV9zPX9ZOsr/BkdV/jeHsvLqpQ==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.Game\\DonAlpha.Game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.9\\microsoft.netcore.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.9\\microsoft.windowsdesktop.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.9\\microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

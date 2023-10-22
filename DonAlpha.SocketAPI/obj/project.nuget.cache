@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "lsjlpVO43qMlkS7lKx73HqsGBvZMGa38bsCcrr4K+CcBd2X2VIqdohiGXVd8C5GBCB9lzTa/BgXVtzlQxc9sAg==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive - HTBLA Leonding\\Documents\\Coding\\Unity\\Server\\DonAlpha\\DonAlpha.SocketAPI\\DonAlpha.SocketAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.9\\microsoft.netcore.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.9\\microsoft.windowsdesktop.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.9\\microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.9\\microsoft.netcore.app.host.win-x64.7.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
